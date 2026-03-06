@@ -6,9 +6,11 @@ import time
 import torch
 import numpy as np
 
-# LFM2 architecture uses ops that vLLM V1's Triton kernels can't compile.
+# On GPU: LFM2's custom ops cause vLLM V1's Triton kernel compilation to fail.
 # Force V0 engine BEFORE importing vllm (reads env at import time).
-os.environ.setdefault("VLLM_USE_V1", "0")
+# On CPU: leave default — the CPU nightly already works correctly.
+if torch.cuda.is_available():
+    os.environ.setdefault("VLLM_USE_V1", "0")
 
 from vllm import AsyncEngineArgs, AsyncLLMEngine, SamplingParams
 from transformers import AutoTokenizer
@@ -243,12 +245,14 @@ class VLLMTTSGenerator:
         vllm_model_path = prepare_vllm_model()
         print(f"Loading vLLM AsyncLLMEngine model: {vllm_model_path}")
 
-        # Auto-detect dtype based on GPU compute capability
+        # Auto-detect dtype and eager mode based on GPU compute capability
         infer_dtype = "bfloat16"
+        use_eager = False  # CPU default — was working, don't change
         if torch.cuda.is_available():
             cc = torch.cuda.get_device_capability()
             if cc[0] < 8:                # T4, V100 (cc 7.x) — no bf16 support
                 infer_dtype = "float16"
+            use_eager = True              # GPU + V0 engine — use eager mode
             print(f"GPU compute capability {cc[0]}.{cc[1]} — using {infer_dtype}")
 
         # Configure engine arguments — uses local model with standard Lfm2ForCausalLM
@@ -257,7 +261,7 @@ class VLLMTTSGenerator:
             tensor_parallel_size=tensor_parallel_size,
             max_model_len=max_model_len,
             gpu_memory_utilization=gpu_memory_utilization,
-            enforce_eager=True,  # V0 engine — eager mode is safest across all GPUs
+            enforce_eager=use_eager,
             max_num_seqs=1,
             dtype=infer_dtype,
         )
