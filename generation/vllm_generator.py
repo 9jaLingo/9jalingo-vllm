@@ -1,6 +1,7 @@
 """vLLM-based text-to-speech generation logic with async streaming for 9jaLingo TTS"""
 
 import asyncio
+import os
 import time
 import torch
 import numpy as np
@@ -237,8 +238,7 @@ class VLLMTTSGenerator:
         vllm_model_path = prepare_vllm_model()
         print(f"Loading vLLM AsyncLLMEngine model: {vllm_model_path}")
 
-        # Pick dtype based on GPU compute capability (T4 = 7.5, no bf16)
-        # Auto-detect dtype and CUDA graph support based on GPU capability
+        # Auto-detect dtype, eager mode, and engine version based on GPU capability
         infer_dtype = "bfloat16"
         use_eager = True  # Default: eager mode (CPU or unknown GPU)
         if torch.cuda.is_available():
@@ -246,8 +246,12 @@ class VLLMTTSGenerator:
             if cc[0] < 8:                # T4, V100 (cc 7.x)
                 infer_dtype = "float16"
                 use_eager = True          # CUDA graph JIT can fail on older archs
+                # V1 engine Triton kernels don't compile for sm_75; fall back to V0
+                os.environ.setdefault("VLLM_USE_V1", "0")
+                print(f"GPU compute capability {cc[0]}.{cc[1]} — using float16 + vLLM V0 engine")
             else:                         # A100, A10G, L4, H100+ (cc 8.0+)
-                use_eager = False         # Safe to use CUDA graphs
+                use_eager = False         # Safe to use CUDA graphs + V1 engine
+                print(f"GPU compute capability {cc[0]}.{cc[1]} — using bfloat16 + vLLM V1 engine")
 
         # Configure engine arguments — uses local model with standard Lfm2ForCausalLM
         engine_args = AsyncEngineArgs(
