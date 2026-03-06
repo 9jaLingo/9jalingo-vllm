@@ -237,6 +237,13 @@ class VLLMTTSGenerator:
         vllm_model_path = prepare_vllm_model()
         print(f"Loading vLLM AsyncLLMEngine model: {vllm_model_path}")
 
+        # Pick dtype based on GPU compute capability (T4 = 7.5, no bf16)
+        infer_dtype = "bfloat16"
+        if torch.cuda.is_available():
+            cc = torch.cuda.get_device_capability()
+            if cc[0] < 8:
+                infer_dtype = "float16"
+
         # Configure engine arguments — uses local model with standard Lfm2ForCausalLM
         engine_args = AsyncEngineArgs(
             model=vllm_model_path,
@@ -245,7 +252,7 @@ class VLLMTTSGenerator:
             gpu_memory_utilization=gpu_memory_utilization,
             enforce_eager=False,  # Allow CUDA graphs (reduces kernel launch overhead)
             max_num_seqs=1,  # Single sequence for TTS — enables better CUDA graph optimization
-            dtype="bfloat16",  # BF16 for faster inference
+            dtype=infer_dtype,
         )
 
         # Create async engine
