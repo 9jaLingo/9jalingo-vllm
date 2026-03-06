@@ -32,7 +32,7 @@ MAX_TOKENS = 3000  # ~40 seconds max continuous audio (40s * 12.5fps * 4 tokens/
 
 # Long-form generation configuration
 LONG_FORM_THRESHOLD_SECONDS = 40.0  # Model supports up to 40s continuous; auto-chunk beyond that
-LONG_FORM_CHUNK_DURATION = 20.0     # Target duration per chunk (well within 40s single-gen limit)
+LONG_FORM_CHUNK_DURATION = 12.0     # Target duration per chunk (within 5-15s training distribution for quality)
 LONG_FORM_SILENCE_DURATION = 0.2    # Silence between chunks in seconds
 
 # Speaker embedding configuration

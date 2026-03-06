@@ -226,6 +226,7 @@ _lfm2_mod.Lfm2ForCausalLM.forward = _frame_level_lfm2_forward
 
 from config import (
     MODEL_NAME, START_OF_HUMAN, END_OF_TEXT, END_OF_HUMAN, END_OF_AI,
+    END_OF_SPEECH,
     TEMPERATURE, TOP_P, REPETITION_PENALTY, MAX_TOKENS, SAMPLE_RATE,
     SUPPORTED_LANGUAGES,
 )
@@ -278,7 +279,7 @@ class VLLMTTSGenerator:
             top_p=TOP_P,
             max_tokens=MAX_TOKENS,
             repetition_penalty=REPETITION_PENALTY,
-            stop_token_ids=[END_OF_AI],
+            stop_token_ids=[END_OF_AI, END_OF_SPEECH],
         )
 
     async def initialize_engine(self):
@@ -345,7 +346,7 @@ class VLLMTTSGenerator:
                 top_p=TOP_P,
                 max_tokens=max_tokens,
                 repetition_penalty=REPETITION_PENALTY,
-                stop_token_ids=[END_OF_AI],
+                stop_token_ids=[END_OF_AI, END_OF_SPEECH],
             )
         else:
             sampling_params = self.sampling_params
@@ -507,6 +508,10 @@ class VLLMTTSGenerator:
         for i, chunk in enumerate(chunks):
             print(f"\n[Long-form] Generating chunk {i+1}/{len(chunks)}: '{chunk[:50]}...'")
 
+            # Cap per-chunk tokens: 2x estimated audio tokens + buffer (prevents runaway generation)
+            chunk_est = estimate_duration(chunk)
+            chunk_max_tokens = min(int(chunk_est * 12.5 * 4 * 2.0) + 200, max_tokens)
+
             # Add language tag prefix for consistency
             prompt = self.build_prompt(chunk, language_tag)
 
@@ -520,7 +525,7 @@ class VLLMTTSGenerator:
             audio_writer.start()
 
             # Generate this chunk
-            result = await self._generate_async(prompt, audio_writer, max_tokens=max_tokens)
+            result = await self._generate_async(prompt, audio_writer, max_tokens=chunk_max_tokens)
 
             # Finalize and get audio
             audio = audio_writer.finalize()

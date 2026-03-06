@@ -111,7 +111,7 @@ class OpenAISpeechRequest(BaseModel):
         description="Auto-detect and use long-form generation for texts >40s"
     )
     max_chunk_duration: Optional[float] = Field(
-        default=20.0,
+        default=12.0,
         description="Max duration per chunk in long-form mode (seconds)"
     )
     silence_duration: Optional[float] = Field(
@@ -130,7 +130,7 @@ async def startup_event():
     generator = VLLMTTSGenerator(
         tensor_parallel_size=1,        # Increase for multi-GPU
         gpu_memory_utilization=0.5,    # Adjust based on available VRAM
-        max_model_len=1024             # Maximum sequence length
+        max_model_len=4096             # Must exceed MAX_TOKENS + prompt; model supports 128K positions
     )
     await generator.initialize_engine()
 
@@ -260,6 +260,10 @@ async def openai_speech(request: OpenAISpeechRequest):
                         total_chunks = len(chunks)
 
                         for i, text_chunk in enumerate(chunks):
+                            # Cap per-chunk tokens: 2x estimated audio tokens + buffer
+                            chunk_est = estimate_duration(text_chunk)
+                            chunk_max_tokens = min(int(chunk_est * 12.5 * 4 * 2.0) + 200, MAX_TOKENS)
+
                             # Custom list wrapper that pushes chunks to queue
                             class ChunkList(list):
                                 def append(self, chunk):
@@ -280,7 +284,7 @@ async def openai_speech(request: OpenAISpeechRequest):
                             result = await generator._generate_async(
                                 chunk_prompt,
                                 audio_writer,
-                                max_tokens=MAX_TOKENS
+                                max_tokens=chunk_max_tokens
                             )
                             audio_writer.finalize()
 
