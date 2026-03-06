@@ -38,16 +38,20 @@ class DirectTTSGenerator:
         if not self._model_loaded:
             import os
             from naijalingo_tts_2 import NaijaLingoTTS
+            from huggingface_hub import snapshot_download
 
-            # Ensure HF auth is registered for private model access
+            # Resolve to local cache path so NaijaLingoTTS never hits the network.
+            # The model was already downloaded by prepare_model / vLLM engine init.
             hf_token = os.environ.get("HF_TOKEN")
-            if hf_token:
-                from huggingface_hub import login
-                login(token=hf_token, add_to_git_credential=False)
-
-            print("🔄 Loading direct NaijaLingoTTS model for speaker-embedding generation...")
-            self._model = NaijaLingoTTS(
+            local_path = snapshot_download(
                 MODEL_NAME,
+                token=hf_token,
+                local_files_only=True,
+            )
+            print(f"🔄 Loading direct NaijaLingoTTS model from cache: {local_path}")
+
+            self._model = NaijaLingoTTS(
+                local_path,
                 max_new_tokens=MAX_TOKENS,
                 suppress_logs=True,
                 show_info=False,
