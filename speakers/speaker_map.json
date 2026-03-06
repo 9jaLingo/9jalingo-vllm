@@ -1,0 +1,2878 @@
+{
+  "abdullahi_ha": {
+    "id": "abdullahi_ha",
+    "display_name": "Abdullahi (ha)",
+    "name": "Abdullahi",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/abdullahi_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "abimbola_yo": {
+    "id": "abimbola_yo",
+    "display_name": "Abimbola (yo)",
+    "name": "Abimbola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/abimbola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "abisoye_yo": {
+    "id": "abisoye_yo",
+    "display_name": "Abisoye (yo)",
+    "name": "Abisoye",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/abisoye_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "abubakar_ha": {
+    "id": "abubakar_ha",
+    "display_name": "Abubakar (ha)",
+    "name": "Abubakar",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/abubakar_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "ada_pcm": {
+    "id": "ada_pcm",
+    "display_name": "Ada (pcm)",
+    "name": "Ada",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/ada_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "adaeze_ig": {
+    "id": "adaeze_ig",
+    "display_name": "Adaeze (ig)",
+    "name": "Adaeze",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/adaeze_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "adanna_ig": {
+    "id": "adanna_ig",
+    "display_name": "Adanna (ig)",
+    "name": "Adanna",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/adanna_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "adaora_ig": {
+    "id": "adaora_ig",
+    "display_name": "Adaora (ig)",
+    "name": "Adaora",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/adaora_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "adekunle_yo": {
+    "id": "adekunle_yo",
+    "display_name": "Adekunle (yo)",
+    "name": "Adekunle",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/adekunle_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "adeniyi_yo": {
+    "id": "adeniyi_yo",
+    "display_name": "Adeniyi (yo)",
+    "name": "Adeniyi",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/adeniyi_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "adeola_yo": {
+    "id": "adeola_yo",
+    "display_name": "Adeola (yo)",
+    "name": "Adeola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/adeola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "adetokunbo_yo": {
+    "id": "adetokunbo_yo",
+    "display_name": "Adetokunbo (yo)",
+    "name": "Adetokunbo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/adetokunbo_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "adetola_yo": {
+    "id": "adetola_yo",
+    "display_name": "Adetola (yo)",
+    "name": "Adetola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/adetola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "adunni_yo": {
+    "id": "adunni_yo",
+    "display_name": "Adunni (yo)",
+    "name": "Adunni",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/adunni_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "afolake_yo": {
+    "id": "afolake_yo",
+    "display_name": "Afolake (yo)",
+    "name": "Afolake",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/afolake_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "aisha_ha": {
+    "id": "aisha_ha",
+    "display_name": "Aisha (ha)",
+    "name": "Aisha",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/aisha_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "aisha_pcm": {
+    "id": "aisha_pcm",
+    "display_name": "Aisha (pcm)",
+    "name": "Aisha",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/aisha_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "aliyu_ha": {
+    "id": "aliyu_ha",
+    "display_name": "Aliyu (ha)",
+    "name": "Aliyu",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/aliyu_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "amarachi_ig": {
+    "id": "amarachi_ig",
+    "display_name": "Amarachi (ig)",
+    "name": "Amarachi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/amarachi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "awulika_ig": {
+    "id": "awulika_ig",
+    "display_name": "Awulika (ig)",
+    "name": "Awulika",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/awulika_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ayomide_yo": {
+    "id": "ayomide_yo",
+    "display_name": "Ayomide (yo)",
+    "name": "Ayomide",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/ayomide_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "azubuike_ig": {
+    "id": "azubuike_ig",
+    "display_name": "Azubuike (ig)",
+    "name": "Azubuike",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/azubuike_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "babajide_yo": {
+    "id": "babajide_yo",
+    "display_name": "Babajide (yo)",
+    "name": "Babajide",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/babajide_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "babatunde_yo": {
+    "id": "babatunde_yo",
+    "display_name": "Babatunde (yo)",
+    "name": "Babatunde",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/babatunde_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "bello_ha": {
+    "id": "bello_ha",
+    "display_name": "Bello (ha)",
+    "name": "Bello",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/bello_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "bilkisu_ha": {
+    "id": "bilkisu_ha",
+    "display_name": "Bilkisu (ha)",
+    "name": "Bilkisu",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/bilkisu_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "bimpe_yo": {
+    "id": "bimpe_yo",
+    "display_name": "Bimpe (yo)",
+    "name": "Bimpe",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/bimpe_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "binta_ha": {
+    "id": "binta_ha",
+    "display_name": "Binta (ha)",
+    "name": "Binta",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/binta_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "blessing_pcm": {
+    "id": "blessing_pcm",
+    "display_name": "Blessing (pcm)",
+    "name": "Blessing",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/blessing_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "bola_pcm": {
+    "id": "bola_pcm",
+    "display_name": "Bola (pcm)",
+    "name": "Bola",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/bola_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "boluwatife_yo": {
+    "id": "boluwatife_yo",
+    "display_name": "Boluwatife (yo)",
+    "name": "Boluwatife",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/boluwatife_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "bose_pcm": {
+    "id": "bose_pcm",
+    "display_name": "Bose (pcm)",
+    "name": "Bose",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/bose_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "bright_pcm": {
+    "id": "bright_pcm",
+    "display_name": "Bright (pcm)",
+    "name": "Bright",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/bright_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "bunmi_pcm": {
+    "id": "bunmi_pcm",
+    "display_name": "Bunmi (pcm)",
+    "name": "Bunmi",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/bunmi_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "busayo_yo": {
+    "id": "busayo_yo",
+    "display_name": "Busayo (yo)",
+    "name": "Busayo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/busayo_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "charles_pcm": {
+    "id": "charles_pcm",
+    "display_name": "Charles (pcm)",
+    "name": "Charles",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/charles_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chiamaka_ig": {
+    "id": "chiamaka_ig",
+    "display_name": "Chiamaka (ig)",
+    "name": "Chiamaka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chiamaka_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chibueze_ig": {
+    "id": "chibueze_ig",
+    "display_name": "Chibueze (ig)",
+    "name": "Chibueze",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chibueze_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chidimma_ig": {
+    "id": "chidimma_ig",
+    "display_name": "Chidimma (ig)",
+    "name": "Chidimma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chidimma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "chidinma_ig": {
+    "id": "chidinma_ig",
+    "display_name": "Chidinma (ig)",
+    "name": "Chidinma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chidinma_ig.pt"
+  },
+  "chijioke_ig": {
+    "id": "chijioke_ig",
+    "display_name": "Chijioke (ig)",
+    "name": "Chijioke",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chijioke_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chika_ig": {
+    "id": "chika_ig",
+    "display_name": "Chika (ig)",
+    "name": "Chika",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chika_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chinedu_ig": {
+    "id": "chinedu_ig",
+    "display_name": "Chinedu (ig)",
+    "name": "Chinedu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chinedu_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chinwe_ig": {
+    "id": "chinwe_ig",
+    "display_name": "Chinwe (ig)",
+    "name": "Chinwe",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chinwe_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "chinyere_ig": {
+    "id": "chinyere_ig",
+    "display_name": "Chinyere (ig)",
+    "name": "Chinyere",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chinyere_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chioma_pcm": {
+    "id": "chioma_pcm",
+    "display_name": "Chioma (pcm)",
+    "name": "Chioma",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/chioma_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chisimdi_ig": {
+    "id": "chisimdi_ig",
+    "display_name": "Chisimdi (ig)",
+    "name": "Chisimdi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chisimdi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "chizoba_ig": {
+    "id": "chizoba_ig",
+    "display_name": "Chizoba (ig)",
+    "name": "Chizoba",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/chizoba_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "christy_pcm": {
+    "id": "christy_pcm",
+    "display_name": "Christy (pcm)",
+    "name": "Christy",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/christy_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "comfort_pcm": {
+    "id": "comfort_pcm",
+    "display_name": "Comfort (pcm)",
+    "name": "Comfort",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/comfort_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "daniel_pcm": {
+    "id": "daniel_pcm",
+    "display_name": "Daniel (pcm)",
+    "name": "Daniel",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/daniel_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "danladi_ha": {
+    "id": "danladi_ha",
+    "display_name": "Danladi (ha)",
+    "name": "Danladi",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/danladi_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "david_pcm": {
+    "id": "david_pcm",
+    "display_name": "David (pcm)",
+    "name": "David",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/david_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "dayo_yo": {
+    "id": "dayo_yo",
+    "display_name": "Dayo (yo)",
+    "name": "Dayo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/dayo_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "deborah_pcm": {
+    "id": "deborah_pcm",
+    "display_name": "Deborah (pcm)",
+    "name": "Deborah",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/deborah_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "dora_pcm": {
+    "id": "dora_pcm",
+    "display_name": "Dora (pcm)",
+    "name": "Dora",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/dora_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "edith_pcm": {
+    "id": "edith_pcm",
+    "display_name": "Edith (pcm)",
+    "name": "Edith",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/edith_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "edwin_pcm": {
+    "id": "edwin_pcm",
+    "display_name": "Edwin (pcm)",
+    "name": "Edwin",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/edwin_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ekene_ig": {
+    "id": "ekene_ig",
+    "display_name": "Ekene (ig)",
+    "name": "Ekene",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ekene_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "emeka_ig": {
+    "id": "emeka_ig",
+    "display_name": "Emeka (ig)",
+    "name": "Emeka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/emeka_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "emmanuel_pcm": {
+    "id": "emmanuel_pcm",
+    "display_name": "Emmanuel (pcm)",
+    "name": "Emmanuel",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/emmanuel_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "eniola_yo": {
+    "id": "eniola_yo",
+    "display_name": "Eniola (yo)",
+    "name": "Eniola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/eniola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "esther_pcm": {
+    "id": "esther_pcm",
+    "display_name": "Esther (pcm)",
+    "name": "Esther",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/esther_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "evelyn_pcm": {
+    "id": "evelyn_pcm",
+    "display_name": "Evelyn (pcm)",
+    "name": "Evelyn",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/evelyn_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ezinne_ig": {
+    "id": "ezinne_ig",
+    "display_name": "Ezinne (ig)",
+    "name": "Ezinne",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ezinne_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "faith_pcm": {
+    "id": "faith_pcm",
+    "display_name": "Faith (pcm)",
+    "name": "Faith",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/faith_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "fatima_ha": {
+    "id": "fatima_ha",
+    "display_name": "Fatima (ha)",
+    "name": "Fatima",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/fatima_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "felix_pcm": {
+    "id": "felix_pcm",
+    "display_name": "Felix (pcm)",
+    "name": "Felix",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/felix_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "femi_yo": {
+    "id": "femi_yo",
+    "display_name": "Femi (yo)",
+    "name": "Femi",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/femi_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "flora_pcm": {
+    "id": "flora_pcm",
+    "display_name": "Flora (pcm)",
+    "name": "Flora",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/flora_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "folake_yo": {
+    "id": "folake_yo",
+    "display_name": "Folake (yo)",
+    "name": "Folake",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/folake_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "frank_pcm": {
+    "id": "frank_pcm",
+    "display_name": "Frank (pcm)",
+    "name": "Frank",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/frank_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "funke_pcm": {
+    "id": "funke_pcm",
+    "display_name": "Funke (pcm)",
+    "name": "Funke",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/funke_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "funmilayo_yo": {
+    "id": "funmilayo_yo",
+    "display_name": "Funmilayo (yo)",
+    "name": "Funmilayo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/funmilayo_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "george_pcm": {
+    "id": "george_pcm",
+    "display_name": "George (pcm)",
+    "name": "George",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/george_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "gift_pcm": {
+    "id": "gift_pcm",
+    "display_name": "Gift (pcm)",
+    "name": "Gift",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/gift_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ginika_ig": {
+    "id": "ginika_ig",
+    "display_name": "Ginika (ig)",
+    "name": "Ginika",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ginika_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "gloria_pcm": {
+    "id": "gloria_pcm",
+    "display_name": "Gloria (pcm)",
+    "name": "Gloria",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/gloria_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "grace_pcm": {
+    "id": "grace_pcm",
+    "display_name": "Grace (pcm)",
+    "name": "Grace",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/grace_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "hadiza_ha": {
+    "id": "hadiza_ha",
+    "display_name": "Hadiza (ha)",
+    "name": "Hadiza",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/hadiza_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "halima_ha": {
+    "id": "halima_ha",
+    "display_name": "Halima (ha)",
+    "name": "Halima",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/halima_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "hamza_ha": {
+    "id": "hamza_ha",
+    "display_name": "Hamza (ha)",
+    "name": "Hamza",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/hamza_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "haruna_ha": {
+    "id": "haruna_ha",
+    "display_name": "Haruna (ha)",
+    "name": "Haruna",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/haruna_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "hassan_ha": {
+    "id": "hassan_ha",
+    "display_name": "Hassan (ha)",
+    "name": "Hassan",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/hassan_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "hauwa_ha": {
+    "id": "hauwa_ha",
+    "display_name": "Hauwa (ha)",
+    "name": "Hauwa",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/hauwa_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "helen_pcm": {
+    "id": "helen_pcm",
+    "display_name": "Helen (pcm)",
+    "name": "Helen",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/helen_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "henry_pcm": {
+    "id": "henry_pcm",
+    "display_name": "Henry (pcm)",
+    "name": "Henry",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/henry_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "hope_pcm": {
+    "id": "hope_pcm",
+    "display_name": "Hope (pcm)",
+    "name": "Hope",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/hope_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "hussaina_ha": {
+    "id": "hussaina_ha",
+    "display_name": "Hussaina (ha)",
+    "name": "Hussaina",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/hussaina_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "ibrahim_ha": {
+    "id": "ibrahim_ha",
+    "display_name": "Ibrahim (ha)",
+    "name": "Ibrahim",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/ibrahim_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "ifeanyi_ig": {
+    "id": "ifeanyi_ig",
+    "display_name": "Ifeanyi (ig)",
+    "name": "Ifeanyi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ifeanyi_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "ifeanyichukwu_ig": {
+    "id": "ifeanyichukwu_ig",
+    "display_name": "Ifeanyichukwu (ig)",
+    "name": "Ifeanyichukwu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ifeanyichukwu_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "ifeoluwa_yo": {
+    "id": "ifeoluwa_yo",
+    "display_name": "Ifeoluwa (yo)",
+    "name": "Ifeoluwa",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/ifeoluwa_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ifeoma_ig": {
+    "id": "ifeoma_ig",
+    "display_name": "Ifeoma (ig)",
+    "name": "Ifeoma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ifeoma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ifunanya_ig": {
+    "id": "ifunanya_ig",
+    "display_name": "Ifunanya (ig)",
+    "name": "Ifunanya",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ifunanya_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ify_pcm": {
+    "id": "ify_pcm",
+    "display_name": "Ify (pcm)",
+    "name": "Ify",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/ify_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ijeoma_ig": {
+    "id": "ijeoma_ig",
+    "display_name": "Ijeoma (ig)",
+    "name": "Ijeoma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ijeoma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ike_pcm": {
+    "id": "ike_pcm",
+    "display_name": "Ike (pcm)",
+    "name": "Ike",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/ike_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ikechukwu_ig": {
+    "id": "ikechukwu_ig",
+    "display_name": "Ikechukwu (ig)",
+    "name": "Ikechukwu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ikechukwu_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "isioma_ig": {
+    "id": "isioma_ig",
+    "display_name": "Isioma (ig)",
+    "name": "Isioma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/isioma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ismail_ha": {
+    "id": "ismail_ha",
+    "display_name": "Ismail (ha)",
+    "name": "Ismail",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/ismail_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "iyabo_yo": {
+    "id": "iyabo_yo",
+    "display_name": "Iyabo (yo)",
+    "name": "Iyabo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/iyabo_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "james_pcm": {
+    "id": "james_pcm",
+    "display_name": "James (pcm)",
+    "name": "James",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/james_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "jamila_ha": {
+    "id": "jamila_ha",
+    "display_name": "Jamila (ha)",
+    "name": "Jamila",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/jamila_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "janet_pcm": {
+    "id": "janet_pcm",
+    "display_name": "Janet (pcm)",
+    "name": "Janet",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/janet_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "jide_yo": {
+    "id": "jide_yo",
+    "display_name": "Jide (yo)",
+    "name": "Jide",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/jide_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "jidenna_ig": {
+    "id": "jidenna_ig",
+    "display_name": "Jidenna (ig)",
+    "name": "Jidenna",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/jidenna_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "joseph_pcm": {
+    "id": "joseph_pcm",
+    "display_name": "Joseph (pcm)",
+    "name": "Joseph",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/joseph_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "joy_pcm": {
+    "id": "joy_pcm",
+    "display_name": "Joy (pcm)",
+    "name": "Joy",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/joy_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "jumoke_yo": {
+    "id": "jumoke_yo",
+    "display_name": "Jumoke (yo)",
+    "name": "Jumoke",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/jumoke_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "kalatu_pcm": {
+    "id": "kalatu_pcm",
+    "display_name": "Kalatu (pcm)",
+    "name": "Kalatu",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/kalatu_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "kehinde_yo": {
+    "id": "kehinde_yo",
+    "display_name": "Kehinde (yo)",
+    "name": "Kehinde",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/kehinde_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "kelechi_ig": {
+    "id": "kelechi_ig",
+    "display_name": "Kelechi (ig)",
+    "name": "Kelechi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/kelechi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "kemi_pcm": {
+    "id": "kemi_pcm",
+    "display_name": "Kemi (pcm)",
+    "name": "Kemi",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/kemi_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "kenechukwu_ig": {
+    "id": "kenechukwu_ig",
+    "display_name": "Kenechukwu (ig)",
+    "name": "Kenechukwu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/kenechukwu_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "kenneth_pcm": {
+    "id": "kenneth_pcm",
+    "display_name": "Kenneth (pcm)",
+    "name": "Kenneth",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/kenneth_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "kofoworola_yo": {
+    "id": "kofoworola_yo",
+    "display_name": "Kofoworola (yo)",
+    "name": "Kofoworola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/kofoworola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "kunle_yo": {
+    "id": "kunle_yo",
+    "display_name": "Kunle (yo)",
+    "name": "Kunle",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/kunle_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "lawrence_pcm": {
+    "id": "lawrence_pcm",
+    "display_name": "Lawrence (pcm)",
+    "name": "Lawrence",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/lawrence_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "linda_pcm": {
+    "id": "linda_pcm",
+    "display_name": "Linda (pcm)",
+    "name": "Linda",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/linda_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "lola_pcm": {
+    "id": "lola_pcm",
+    "display_name": "Lola (pcm)",
+    "name": "Lola",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/lola_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "lotachi_ig": {
+    "id": "lotachi_ig",
+    "display_name": "Lotachi (ig)",
+    "name": "Lotachi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/lotachi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "lucky_pcm": {
+    "id": "lucky_pcm",
+    "display_name": "Lucky (pcm)",
+    "name": "Lucky",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/lucky_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "mabel_pcm": {
+    "id": "mabel_pcm",
+    "display_name": "Mabel (pcm)",
+    "name": "Mabel",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/mabel_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "mahmud_ha": {
+    "id": "mahmud_ha",
+    "display_name": "Mahmud (ha)",
+    "name": "Mahmud",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/mahmud_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "mary_pcm": {
+    "id": "mary_pcm",
+    "display_name": "Mary (pcm)",
+    "name": "Mary",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/mary_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "maryam_ha": {
+    "id": "maryam_ha",
+    "display_name": "Maryam (ha)",
+    "name": "Maryam",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/maryam_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "mercy_pcm": {
+    "id": "mercy_pcm",
+    "display_name": "Mercy (pcm)",
+    "name": "Mercy",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/mercy_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "michael_pcm": {
+    "id": "michael_pcm",
+    "display_name": "Michael (pcm)",
+    "name": "Michael",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/michael_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "mojisola_yo": {
+    "id": "mojisola_yo",
+    "display_name": "Mojisola (yo)",
+    "name": "Mojisola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/mojisola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "morenike_yo": {
+    "id": "morenike_yo",
+    "display_name": "Morenike (yo)",
+    "name": "Morenike",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/morenike_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "morenikeji_yo": {
+    "id": "morenikeji_yo",
+    "display_name": "Morenikeji (yo)",
+    "name": "Morenikeji",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/morenikeji_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "moses_pcm": {
+    "id": "moses_pcm",
+    "display_name": "Moses (pcm)",
+    "name": "Moses",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/moses_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "munachi_ig": {
+    "id": "munachi_ig",
+    "display_name": "Munachi (ig)",
+    "name": "Munachi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/munachi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "mustapha_ha": {
+    "id": "mustapha_ha",
+    "display_name": "Mustapha (ha)",
+    "name": "Mustapha",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/mustapha_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nafisa_ha": {
+    "id": "nafisa_ha",
+    "display_name": "Nafisa (ha)",
+    "name": "Nafisa",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/nafisa_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "ndubuisi_ig": {
+    "id": "ndubuisi_ig",
+    "display_name": "Ndubuisi (ig)",
+    "name": "Ndubuisi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ndubuisi_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ngozi_ig": {
+    "id": "ngozi_ig",
+    "display_name": "Ngozi (ig)",
+    "name": "Ngozi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ngozi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nike_pcm": {
+    "id": "nike_pcm",
+    "display_name": "Nike (pcm)",
+    "name": "Nike",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/nike_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nkechi_ig": {
+    "id": "nkechi_ig",
+    "display_name": "Nkechi (ig)",
+    "name": "Nkechi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nkechi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nkeiru_ig": {
+    "id": "nkeiru_ig",
+    "display_name": "Nkeiru (ig)",
+    "name": "Nkeiru",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nkeiru_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nkem_pcm": {
+    "id": "nkem_pcm",
+    "display_name": "Nkem (pcm)",
+    "name": "Nkem",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/nkem_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "nkemjika_ig": {
+    "id": "nkemjika_ig",
+    "display_name": "Nkemjika (ig)",
+    "name": "Nkemjika",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nkemjika_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nkiruka_ig": {
+    "id": "nkiruka_ig",
+    "display_name": "Nkiruka (ig)",
+    "name": "Nkiruka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nkiruka_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nmesoma_ig": {
+    "id": "nmesoma_ig",
+    "display_name": "Nmesoma (ig)",
+    "name": "Nmesoma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nmesoma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nneamaka_ig": {
+    "id": "nneamaka_ig",
+    "display_name": "Nneamaka (ig)",
+    "name": "Nneamaka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nneamaka_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nneka_ig": {
+    "id": "nneka_ig",
+    "display_name": "Nneka (ig)",
+    "name": "Nneka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nneka_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nnenne_ig": {
+    "id": "nnenne_ig",
+    "display_name": "Nnenne (ig)",
+    "name": "Nnenne",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nnenne_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nneoma_ig": {
+    "id": "nneoma_ig",
+    "display_name": "Nneoma (ig)",
+    "name": "Nneoma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nneoma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nonso_pcm": {
+    "id": "nonso_pcm",
+    "display_name": "Nonso (pcm)",
+    "name": "Nonso",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/nonso_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "nuhu_ha": {
+    "id": "nuhu_ha",
+    "display_name": "Nuhu (ha)",
+    "name": "Nuhu",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/nuhu_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "nwaka_ig": {
+    "id": "nwaka_ig",
+    "display_name": "Nwaka (ig)",
+    "name": "Nwaka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nwaka_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "nwamaka_ig": {
+    "id": "nwamaka_ig",
+    "display_name": "Nwamaka (ig)",
+    "name": "Nwamaka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/nwamaka_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "obasi_pcm": {
+    "id": "obasi_pcm",
+    "display_name": "Obasi (pcm)",
+    "name": "Obasi",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/obasi_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "obi_ig": {
+    "id": "obi_ig",
+    "display_name": "Obi (ig)",
+    "name": "Obi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/obi_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "obiageli_ig": {
+    "id": "obiageli_ig",
+    "display_name": "Obiageli (ig)",
+    "name": "Obiageli",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/obiageli_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "obianuju_ig": {
+    "id": "obianuju_ig",
+    "display_name": "Obianuju (ig)",
+    "name": "Obianuju",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/obianuju_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "obinna_ig": {
+    "id": "obinna_ig",
+    "display_name": "Obinna (ig)",
+    "name": "Obinna",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/obinna_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "obiora_ig": {
+    "id": "obiora_ig",
+    "display_name": "Obiora (ig)",
+    "name": "Obiora",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/obiora_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ogadinma_ig": {
+    "id": "ogadinma_ig",
+    "display_name": "Ogadinma (ig)",
+    "name": "Ogadinma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ogadinma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ogechi_ig": {
+    "id": "ogechi_ig",
+    "display_name": "Ogechi (ig)",
+    "name": "Ogechi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ogechi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "ogechukwu_ig": {
+    "id": "ogechukwu_ig",
+    "display_name": "Ogechukwu (ig)",
+    "name": "Ogechukwu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ogechukwu_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "okechukwu_ig": {
+    "id": "okechukwu_ig",
+    "display_name": "Okechukwu (ig)",
+    "name": "Okechukwu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/okechukwu_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "oladipo_yo": {
+    "id": "oladipo_yo",
+    "display_name": "Oladipo (yo)",
+    "name": "Oladipo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/oladipo_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "olalekan_yo": {
+    "id": "olalekan_yo",
+    "display_name": "Olalekan (yo)",
+    "name": "Olalekan",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/olalekan_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "olatunde_yo": {
+    "id": "olatunde_yo",
+    "display_name": "Olatunde (yo)",
+    "name": "Olatunde",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/olatunde_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "olatunji_yo": {
+    "id": "olatunji_yo",
+    "display_name": "Olatunji (yo)",
+    "name": "Olatunji",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/olatunji_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "olayinka_yo": {
+    "id": "olayinka_yo",
+    "display_name": "Olayinka (yo)",
+    "name": "Olayinka",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/olayinka_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "ololade_yo": {
+    "id": "ololade_yo",
+    "display_name": "Ololade (yo)",
+    "name": "Ololade",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/ololade_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "olu_pcm": {
+    "id": "olu_pcm",
+    "display_name": "Olu (pcm)",
+    "name": "Olu",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/olu_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "olufunke_yo": {
+    "id": "olufunke_yo",
+    "display_name": "Olufunke (yo)",
+    "name": "Olufunke",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/olufunke_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "oluomachi_ig": {
+    "id": "oluomachi_ig",
+    "display_name": "Oluomachi (ig)",
+    "name": "Oluomachi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/oluomachi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "olusegun_yo": {
+    "id": "olusegun_yo",
+    "display_name": "Olusegun (yo)",
+    "name": "Olusegun",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/olusegun_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "oluwafemi_yo": {
+    "id": "oluwafemi_yo",
+    "display_name": "Oluwafemi (yo)",
+    "name": "Oluwafemi",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/oluwafemi_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "oluwakemi_yo": {
+    "id": "oluwakemi_yo",
+    "display_name": "Oluwakemi (yo)",
+    "name": "Oluwakemi",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/oluwakemi_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "oluwaseyi_yo": {
+    "id": "oluwaseyi_yo",
+    "display_name": "Oluwaseyi (yo)",
+    "name": "Oluwaseyi",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/oluwaseyi_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "omolade_yo": {
+    "id": "omolade_yo",
+    "display_name": "Omolade (yo)",
+    "name": "Omolade",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/omolade_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "omolara_yo": {
+    "id": "omolara_yo",
+    "display_name": "Omolara (yo)",
+    "name": "Omolara",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/omolara_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "omowunmi_yo": {
+    "id": "omowunmi_yo",
+    "display_name": "Omowunmi (yo)",
+    "name": "Omowunmi",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/omowunmi_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "onyinye_ig": {
+    "id": "onyinye_ig",
+    "display_name": "Onyinye (ig)",
+    "name": "Onyinye",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/onyinye_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "opeyemi_yo": {
+    "id": "opeyemi_yo",
+    "display_name": "Opeyemi (yo)",
+    "name": "Opeyemi",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/opeyemi_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "ovie_pcm": {
+    "id": "ovie_pcm",
+    "display_name": "Ovie (pcm)",
+    "name": "Ovie",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/ovie_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "oyindamola_yo": {
+    "id": "oyindamola_yo",
+    "display_name": "Oyindamola (yo)",
+    "name": "Oyindamola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/oyindamola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "patience_pcm": {
+    "id": "patience_pcm",
+    "display_name": "Patience (pcm)",
+    "name": "Patience",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/patience_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "patrick_pcm": {
+    "id": "patrick_pcm",
+    "display_name": "Patrick (pcm)",
+    "name": "Patrick",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/patrick_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "pauline_pcm": {
+    "id": "pauline_pcm",
+    "display_name": "Pauline (pcm)",
+    "name": "Pauline",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/pauline_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "peace_pcm": {
+    "id": "peace_pcm",
+    "display_name": "Peace (pcm)",
+    "name": "Peace",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/peace_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "peter_pcm": {
+    "id": "peter_pcm",
+    "display_name": "Peter (pcm)",
+    "name": "Peter",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/peter_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "precious_pcm": {
+    "id": "precious_pcm",
+    "display_name": "Precious (pcm)",
+    "name": "Precious",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/precious_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "queen_pcm": {
+    "id": "queen_pcm",
+    "display_name": "Queen (pcm)",
+    "name": "Queen",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/queen_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "rabi_ha": {
+    "id": "rabi_ha",
+    "display_name": "Rabi (ha)",
+    "name": "Rabi",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/rabi_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "raymond_pcm": {
+    "id": "raymond_pcm",
+    "display_name": "Raymond (pcm)",
+    "name": "Raymond",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/raymond_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "richard_pcm": {
+    "id": "richard_pcm",
+    "display_name": "Richard (pcm)",
+    "name": "Richard",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/richard_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ronke_yo": {
+    "id": "ronke_yo",
+    "display_name": "Ronke (yo)",
+    "name": "Ronke",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/ronke_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "rose_pcm": {
+    "id": "rose_pcm",
+    "display_name": "Rose (pcm)",
+    "name": "Rose",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/rose_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ruth_pcm": {
+    "id": "ruth_pcm",
+    "display_name": "Ruth (pcm)",
+    "name": "Ruth",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/ruth_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "sade_yo": {
+    "id": "sade_yo",
+    "display_name": "Sade (yo)",
+    "name": "Sade",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/sade_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "sadiya_ha": {
+    "id": "sadiya_ha",
+    "display_name": "Sadiya (ha)",
+    "name": "Sadiya",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/sadiya_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "safiya_ha": {
+    "id": "safiya_ha",
+    "display_name": "Safiya (ha)",
+    "name": "Safiya",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/safiya_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "samuel_pcm": {
+    "id": "samuel_pcm",
+    "display_name": "Samuel (pcm)",
+    "name": "Samuel",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/samuel_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "sanusi_ha": {
+    "id": "sanusi_ha",
+    "display_name": "Sanusi (ha)",
+    "name": "Sanusi",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/sanusi_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "sarah_pcm": {
+    "id": "sarah_pcm",
+    "display_name": "Sarah (pcm)",
+    "name": "Sarah",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/sarah_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "segun_yo": {
+    "id": "segun_yo",
+    "display_name": "Segun (yo)",
+    "name": "Segun",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/segun_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "seun_pcm": {
+    "id": "seun_pcm",
+    "display_name": "Seun (pcm)",
+    "name": "Seun",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/seun_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "shehu_ha": {
+    "id": "shehu_ha",
+    "display_name": "Shehu (ha)",
+    "name": "Shehu",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/shehu_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "simisola_yo": {
+    "id": "simisola_yo",
+    "display_name": "Simisola (yo)",
+    "name": "Simisola",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/simisola_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "somtochi_ig": {
+    "id": "somtochi_ig",
+    "display_name": "Somtochi (ig)",
+    "name": "Somtochi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/somtochi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "stella_pcm": {
+    "id": "stella_pcm",
+    "display_name": "Stella (pcm)",
+    "name": "Stella",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/stella_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "sunday_pcm": {
+    "id": "sunday_pcm",
+    "display_name": "Sunday (pcm)",
+    "name": "Sunday",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/sunday_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "taiwo_yo": {
+    "id": "taiwo_yo",
+    "display_name": "Taiwo (yo)",
+    "name": "Taiwo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/taiwo_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "tanko_ha": {
+    "id": "tanko_ha",
+    "display_name": "Tanko (ha)",
+    "name": "Tanko",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/tanko_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "tayo_pcm": {
+    "id": "tayo_pcm",
+    "display_name": "Tayo (pcm)",
+    "name": "Tayo",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/tayo_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "temi_pcm": {
+    "id": "temi_pcm",
+    "display_name": "Temi (pcm)",
+    "name": "Temi",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/temi_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "temilade_yo": {
+    "id": "temilade_yo",
+    "display_name": "Temilade (yo)",
+    "name": "Temilade",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/temilade_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "temiloluwa_yo": {
+    "id": "temiloluwa_yo",
+    "display_name": "Temiloluwa (yo)",
+    "name": "Temiloluwa",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/temiloluwa_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "temitope_yo": {
+    "id": "temitope_yo",
+    "display_name": "Temitope (yo)",
+    "name": "Temitope",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/temitope_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "titilayo_yo": {
+    "id": "titilayo_yo",
+    "display_name": "Titilayo (yo)",
+    "name": "Titilayo",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/titilayo_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "tochukwu_ig": {
+    "id": "tochukwu_ig",
+    "display_name": "Tochukwu (ig)",
+    "name": "Tochukwu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/tochukwu_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "tolulope_yo": {
+    "id": "tolulope_yo",
+    "display_name": "Tolulope (yo)",
+    "name": "Tolulope",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/tolulope_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "toyin_pcm": {
+    "id": "toyin_pcm",
+    "display_name": "Toyin (pcm)",
+    "name": "Toyin",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/toyin_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "tunde_yo": {
+    "id": "tunde_yo",
+    "display_name": "Tunde (yo)",
+    "name": "Tunde",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/tunde_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "uchenna_ig": {
+    "id": "uchenna_ig",
+    "display_name": "Uchenna (ig)",
+    "name": "Uchenna",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/uchenna_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "ugochi_ig": {
+    "id": "ugochi_ig",
+    "display_name": "Ugochi (ig)",
+    "name": "Ugochi",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ugochi_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ugochukwu_ig": {
+    "id": "ugochukwu_ig",
+    "display_name": "Ugochukwu (ig)",
+    "name": "Ugochukwu",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ugochukwu_ig.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "uju_pcm": {
+    "id": "uju_pcm",
+    "display_name": "Uju (pcm)",
+    "name": "Uju",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/uju_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "ujunwa_ig": {
+    "id": "ujunwa_ig",
+    "display_name": "Ujunwa (ig)",
+    "name": "Ujunwa",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/ujunwa_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "uloaku_ig": {
+    "id": "uloaku_ig",
+    "display_name": "Uloaku (ig)",
+    "name": "Uloaku",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/uloaku_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "uloma_ig": {
+    "id": "uloma_ig",
+    "display_name": "Uloma (ig)",
+    "name": "Uloma",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/uloma_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "usman_ha": {
+    "id": "usman_ha",
+    "display_name": "Usman (ha)",
+    "name": "Usman",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/usman_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "uzoamaka_ig": {
+    "id": "uzoamaka_ig",
+    "display_name": "Uzoamaka (ig)",
+    "name": "Uzoamaka",
+    "language": "ig",
+    "language_name": "Igbo",
+    "path": "./speakers/uzoamaka_ig.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "victor_pcm": {
+    "id": "victor_pcm",
+    "display_name": "Victor (pcm)",
+    "name": "Victor",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/victor_pcm.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "victoria_pcm": {
+    "id": "victoria_pcm",
+    "display_name": "Victoria (pcm)",
+    "name": "Victoria",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/victoria_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "vivian_pcm": {
+    "id": "vivian_pcm",
+    "display_name": "Vivian (pcm)",
+    "name": "Vivian",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/vivian_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Health Conversation"
+    ]
+  },
+  "wale_yo": {
+    "id": "wale_yo",
+    "display_name": "Wale (yo)",
+    "name": "Wale",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/wale_yo.pt",
+    "gender": "male",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "wunmi_pcm": {
+    "id": "wunmi_pcm",
+    "display_name": "Wunmi (pcm)",
+    "name": "Wunmi",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/wunmi_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "yeside_pcm": {
+    "id": "yeside_pcm",
+    "display_name": "Yeside (pcm)",
+    "name": "Yeside",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/yeside_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  },
+  "yetunde_yo": {
+    "id": "yetunde_yo",
+    "display_name": "Yetunde (yo)",
+    "name": "Yetunde",
+    "language": "yo",
+    "language_name": "Yoruba",
+    "path": "./speakers/yetunde_yo.pt",
+    "gender": "female",
+    "domains": [
+      "Business Conversation"
+    ]
+  },
+  "yusuf_ha": {
+    "id": "yusuf_ha",
+    "display_name": "Yusuf (ha)",
+    "name": "Yusuf",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/yusuf_ha.pt",
+    "gender": "male",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "zainab_ha": {
+    "id": "zainab_ha",
+    "display_name": "Zainab (ha)",
+    "name": "Zainab",
+    "language": "ha",
+    "language_name": "Hausa",
+    "path": "./speakers/zainab_ha.pt",
+    "gender": "female",
+    "domains": [
+      "Agricultural Conversation"
+    ]
+  },
+  "zainab_pcm": {
+    "id": "zainab_pcm",
+    "display_name": "Zainab (pcm)",
+    "name": "Zainab",
+    "language": "pcm",
+    "language_name": "Pidgin",
+    "path": "./speakers/zainab_pcm.pt",
+    "gender": "female",
+    "domains": [
+      "Everyday Conversation"
+    ]
+  }
+}
