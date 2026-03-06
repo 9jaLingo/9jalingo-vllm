@@ -164,9 +164,11 @@ async def health_check():
     }
 
 
-@app.post("/v1/audio/speech")
+@app.post("/v1/audio/speech",
+          responses={200: {"content": {"audio/wav": {}, "audio/mpeg": {}, "audio/flac": {}, "audio/ogg": {}, "audio/aac": {}}}},
+          response_class=Response)
 async def openai_speech(request: OpenAISpeechRequest):
-    """OpenAI-compatible speech generation endpoint
+    """9jaLingo speech generation endpoint
 
     Dual-engine routing:
     - If speaker or speaker_embedding is provided → Direct NaijaLingoTTS model (supports speaker embeddings)
@@ -721,7 +723,9 @@ async def clone_voice(file: UploadFile = File(..., description="Reference audio 
         os.unlink(tmp_path)
 
 
-@app.post("/v1/voice/clone/generate")
+@app.post("/v1/voice/clone/generate",
+          responses={200: {"content": {"audio/wav": {}, "audio/mpeg": {}, "audio/flac": {}, "audio/ogg": {}, "audio/aac": {}}}},
+          response_class=Response)
 async def clone_and_generate(
     file: UploadFile = File(..., description="Reference audio file for voice cloning"),
     text: str = Form(..., description="Text to convert to speech"),
