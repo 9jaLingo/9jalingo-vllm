@@ -36,7 +36,14 @@ class DirectTTSGenerator:
     def ensure_model(self):
         """Lazy-load the NaijaLingoTTS model on first speaker request."""
         if not self._model_loaded:
+            import os
             from naijalingo_tts_2 import NaijaLingoTTS
+
+            # Ensure HF auth is registered for private model access
+            hf_token = os.environ.get("HF_TOKEN")
+            if hf_token:
+                from huggingface_hub import login
+                login(token=hf_token, add_to_git_credential=False)
 
             print("🔄 Loading direct NaijaLingoTTS model for speaker-embedding generation...")
             self._model = NaijaLingoTTS(
