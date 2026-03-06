@@ -1,9 +1,15 @@
 """vLLM-based text-to-speech generation logic with async streaming for 9jaLingo TTS"""
 
 import asyncio
+import os
 import time
 import torch
 import numpy as np
+
+# LFM2 architecture uses ops that vLLM V1's Triton kernels can't compile.
+# Force V0 engine BEFORE importing vllm (reads env at import time).
+os.environ.setdefault("VLLM_USE_V1", "0")
+
 from vllm import AsyncEngineArgs, AsyncLLMEngine, SamplingParams
 from transformers import AutoTokenizer
 
@@ -237,17 +243,13 @@ class VLLMTTSGenerator:
         vllm_model_path = prepare_vllm_model()
         print(f"Loading vLLM AsyncLLMEngine model: {vllm_model_path}")
 
-        # Pick dtype based on GPU compute capability (T4 = 7.5, no bf16)
-        # Auto-detect dtype and CUDA graph support based on GPU capability
+        # Auto-detect dtype based on GPU compute capability
         infer_dtype = "bfloat16"
-        use_eager = True  # Default: eager mode (CPU or unknown GPU)
         if torch.cuda.is_available():
             cc = torch.cuda.get_device_capability()
-            if cc[0] < 8:                # T4, V100 (cc 7.x)
+            if cc[0] < 8:                # T4, V100 (cc 7.x) — no bf16 support
                 infer_dtype = "float16"
-                use_eager = True          # CUDA graph JIT can fail on older archs
-            else:                         # A100, A10G, L4, H100+ (cc 8.0+)
-                use_eager = False         # Safe to use CUDA graphs
+            print(f"GPU compute capability {cc[0]}.{cc[1]} — using {infer_dtype}")
 
         # Configure engine arguments — uses local model with standard Lfm2ForCausalLM
         engine_args = AsyncEngineArgs(
@@ -255,7 +257,7 @@ class VLLMTTSGenerator:
             tensor_parallel_size=tensor_parallel_size,
             max_model_len=max_model_len,
             gpu_memory_utilization=gpu_memory_utilization,
-            enforce_eager=use_eager,
+            enforce_eager=True,  # V0 engine — eager mode is safest across all GPUs
             max_num_seqs=1,
             dtype=infer_dtype,
         )
