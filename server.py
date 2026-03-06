@@ -23,7 +23,7 @@ from generation.vllm_generator import VLLMTTSGenerator
 from generation.direct_generator import DirectTTSGenerator
 from speakers import SpeakerManager
 from config import (
-    CHUNK_SIZE, LOOKBACK_FRAMES, TEMPERATURE, TOP_P, MAX_TOKENS,
+    CHUNK_SIZE, LOOKBACK_FRAMES, TEMPERATURE, TOP_P, REPETITION_PENALTY, MAX_TOKENS,
     LONG_FORM_THRESHOLD_SECONDS, LONG_FORM_SILENCE_DURATION,
     LONG_FORM_CHUNK_DURATION, SUPPORTED_LANGUAGES,
     SPEAKERS_DIR, SPEAKER_EMB_DIM, GENERATION_MANIFEST_PATH,
@@ -73,7 +73,8 @@ class OpenAISpeechRequest(BaseModel):
     )
     voice: str = Field(
         default="pcm",
-        description="Language tag (ha, ig, yo, pcm) or 'default' for no language prefix"
+        validation_alias=AliasChoices("voice", "language"),
+        description="Language tag (ha, ig, yo, pcm). Accepts both 'voice' and 'language' field names."
     )
     response_format: Literal["wav", "pcm", "flac", "alac", "mp3", "aac", "ogg"] = Field(
         default="wav",
@@ -95,15 +96,15 @@ class OpenAISpeechRequest(BaseModel):
     # Generation parameters
     temperature: Optional[float] = Field(
         default=TEMPERATURE,
-        description="Sampling temperature (0.3-1.5, default 1.0)"
+        description="Sampling temperature (0.3-1.5, default 0.6)"
     )
     top_p: Optional[float] = Field(
         default=TOP_P,
-        description="Nucleus sampling threshold (default 0.95)"
+        description="Nucleus sampling threshold (default 0.85)"
     )
     repetition_penalty: Optional[float] = Field(
-        default=1.1,
-        description="Repetition penalty (1.0-1.5, default 1.1)"
+        default=REPETITION_PENALTY,
+        description="Repetition penalty (1.0-1.5, default 1.3)"
     )
     # Long-form generation parameters
     enable_long_form: Optional[bool] = Field(
@@ -532,7 +533,7 @@ async def _generate_direct(request: OpenAISpeechRequest, language_tag, speaker_e
                         silence_duration=request.silence_duration or LONG_FORM_SILENCE_DURATION,
                         temperature=request.temperature or TEMPERATURE,
                         top_p=request.top_p or TOP_P,
-                        repetition_penalty=request.repetition_penalty or 1.1,
+                        repetition_penalty=request.repetition_penalty or REPETITION_PENALTY,
                     )
                 else:
                     full_audio, _ = direct_generator.generate(
@@ -541,7 +542,7 @@ async def _generate_direct(request: OpenAISpeechRequest, language_tag, speaker_e
                         speaker_emb=speaker_emb,
                         temperature=request.temperature or TEMPERATURE,
                         top_p=request.top_p or TOP_P,
-                        repetition_penalty=request.repetition_penalty or 1.1,
+                        repetition_penalty=request.repetition_penalty or REPETITION_PENALTY,
                     )
 
                 # Stream the generated audio in PCM chunks via SSE
@@ -588,7 +589,7 @@ async def _generate_direct(request: OpenAISpeechRequest, language_tag, speaker_e
                     silence_duration=request.silence_duration or LONG_FORM_SILENCE_DURATION,
                     temperature=request.temperature or TEMPERATURE,
                     top_p=request.top_p or TOP_P,
-                    repetition_penalty=request.repetition_penalty or 1.1,
+                    repetition_penalty=request.repetition_penalty or REPETITION_PENALTY,
                 )
             else:
                 full_audio, _ = direct_generator.generate(
@@ -597,7 +598,7 @@ async def _generate_direct(request: OpenAISpeechRequest, language_tag, speaker_e
                     speaker_emb=speaker_emb,
                     temperature=request.temperature or TEMPERATURE,
                     top_p=request.top_p or TOP_P,
-                    repetition_penalty=request.repetition_penalty or 1.1,
+                    repetition_penalty=request.repetition_penalty or REPETITION_PENALTY,
                 )
 
             # Encode audio into requested format
@@ -737,7 +738,7 @@ async def clone_and_generate(
     response_format: str = Form(default="wav", description="Output format (wav, mp3, flac, etc.)"),
     temperature: float = Form(default=1.0, description="Sampling temperature"),
     top_p: float = Form(default=0.95, description="Nucleus sampling threshold"),
-    repetition_penalty: float = Form(default=1.1, description="Repetition penalty"),
+    repetition_penalty: float = Form(default=REPETITION_PENALTY, description="Repetition penalty"),
 ):
     """Clone a voice from reference audio and generate speech in one step.
 

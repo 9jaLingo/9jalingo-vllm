@@ -24,11 +24,11 @@ CHUNK_SIZE = 25  # Number of new frames to output per iteration
 LOOKBACK_FRAMES = 15  # Number of frames to include from previous context
 
 # Generation configuration
-TEMPERATURE = 1.0
-TOP_P = 0.95
-REPETITION_PENALTY = 1.1
+TEMPERATURE = 0.6
+TOP_P = 0.85
+REPETITION_PENALTY = 1.3
 REPETITION_CONTEXT_SIZE = 20
-MAX_TOKENS = 3000  # ~40 seconds max continuous audio (40s * 12.5fps * 4 tokens/frame ≈ 2000 audio tokens + prompt)
+MAX_TOKENS = 1500  # ~20 seconds max continuous audio (20s * 12.5fps * 4 tokens/frame ≈ 1000 audio tokens + prompt)
 
 # Long-form generation configuration
 LONG_FORM_THRESHOLD_SECONDS = 40.0  # Model supports up to 40s continuous; auto-chunk beyond that
