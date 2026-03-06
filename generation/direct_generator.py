@@ -17,7 +17,7 @@ import torch
 import numpy as np
 from typing import Optional, Tuple, Union
 
-from config import MODEL_NAME, SAMPLE_RATE, MAX_TOKENS
+from config import MODEL_NAME, SAMPLE_RATE, MAX_TOKENS, SUPPORTED_LANGUAGES
 
 
 class DirectTTSGenerator:
@@ -56,6 +56,15 @@ class DirectTTSGenerator:
                 suppress_logs=True,
                 show_info=False,
             )
+
+            # The fine-tuned model supports language tags (ha, ig, yo, pcm) but
+            # the HF config doesn't declare language_settings, causing a noisy
+            # warning on every call. Patch the status so the library knows.
+            self._model.model.status = 'available_language_tags'
+            self._model.model.language_tags_list = list(SUPPORTED_LANGUAGES.keys())
+            self._model.status = 'available_language_tags'
+            self._model.language_tags_list = list(SUPPORTED_LANGUAGES.keys())
+
             self._model_loaded = True
             print("✅ Direct NaijaLingoTTS model ready for speaker-aware generation!")
 
@@ -169,10 +178,34 @@ class DirectTTSGenerator:
 
         for i, chunk in enumerate(chunks):
             print(f"[Direct Long-form] Chunk {i+1}/{len(chunks)}: '{chunk[:60]}...'")
-            audio, _ = self.generate(
-                chunk, language_tag, speaker_emb, temperature, top_p, repetition_penalty
-            )
-            audio_segments.append(audio)
+
+            # Cap max_new_tokens per chunk to prevent over-generation:
+            # 2x estimated audio tokens + buffer, aligned to frame boundary (multiple of 4)
+            chunk_est = estimate_duration(chunk)
+            chunk_max_tokens = min(int(chunk_est * 12.5 * 4 * 2.0) + 200, MAX_TOKENS)
+            chunk_max_tokens = (chunk_max_tokens // 4) * 4  # align to frame boundary
+            self._model.model.conf.max_new_tokens = chunk_max_tokens
+
+            try:
+                audio, _ = self.generate(
+                    chunk, language_tag, speaker_emb, temperature, top_p, repetition_penalty
+                )
+                audio_segments.append(audio)
+            except ValueError as e:
+                if 'multiple of 4' in str(e):
+                    print(f"[Direct Long-form] Chunk {i+1} hit token limit mid-frame, retrying with more tokens")
+                    # Retry with more headroom
+                    self._model.model.conf.max_new_tokens = min(chunk_max_tokens + 400, MAX_TOKENS)
+                    self._model.model.conf.max_new_tokens = (self._model.model.conf.max_new_tokens // 4) * 4
+                    audio, _ = self.generate(
+                        chunk, language_tag, speaker_emb, temperature, top_p, repetition_penalty
+                    )
+                    audio_segments.append(audio)
+                else:
+                    raise
+            finally:
+                # Restore default
+                self._model.model.conf.max_new_tokens = MAX_TOKENS
 
         # Concatenate with silence
         if len(audio_segments) == 1:
