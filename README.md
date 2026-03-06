@@ -156,7 +156,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "How far, my guy? Na so life be sometimes.",
-    "voice": "pcm",
+    "language": "pcm",
     "response_format": "wav"
   }' \
   --output speech.wav
@@ -169,7 +169,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Sannu da zuwa, yaya kake? Ina fatan ka samu lafiya lau lau.",
-    "voice": "ha",
+    "language": "ha",
     "response_format": "wav"
   }' \
   --output hausa_speech.wav
@@ -182,7 +182,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Bawo ni o se wa? Mo fe ki a ba ara wa soro.",
-    "voice": "yo",
+    "language": "yo",
     "stream_format": "sse"
   }'
 ```
@@ -194,7 +194,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Kedu ka i mere? Anyi nwere obi uto na anyi na-ekwuri okwu taa.",
-    "voice": "ig",
+    "language": "ig",
     "response_format": "wav"
   }' \
   --output igbo_speech.wav
@@ -207,7 +207,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "How far, my people? Today na beautiful day.",
-    "voice": "pcm",
+    "language": "pcm",
     "response_format": "mp3"
   }' \
   --output speech.mp3
@@ -220,7 +220,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Sannu da zuwa. Yaya aiki?",
-    "voice": "ha",
+    "language": "ha",
     "response_format": "flac"
   }' \
   --output speech.flac
@@ -255,7 +255,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "How far, my people?",
-    "voice": "pcm",
+    "language": "pcm",
     "speaker_embedding": [0.12, -0.34, ...],
     "response_format": "wav"
   }' \
@@ -265,7 +265,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
 curl -X POST http://localhost:8000/v1/voice/clone/generate \
   -F "file=@reference_voice.wav" \
   -F "text=How far, my people?" \
-  -F "voice=pcm" \
+  -F "language=pcm" \
   -F "response_format=wav" \
   --output cloned_speech.wav
 ```
@@ -284,14 +284,14 @@ curl -X POST http://localhost:8000/v1/voice/clone/generate \
 {
   "text": "Text to convert to speech",
   "model": "9javox",
-  "voice": "pcm",
+  "language": "pcm",
   "response_format": "wav",
   "stream_format": null,
   "speaker": null,
   "speaker_embedding": null,
-  "temperature": 1.0,
-  "top_p": 0.95,
-  "repetition_penalty": 1.1,
+  "temperature": 0.6,
+  "top_p": 0.85,
+  "repetition_penalty": 1.3,
   "max_chunk_duration": 20.0,
   "silence_duration": 0.2
 }
@@ -301,20 +301,20 @@ curl -X POST http://localhost:8000/v1/voice/clone/generate \
 |-------|------|---------|-------------|
 | `text` | string | required | Text to convert to speech (also accepts `input` for compatibility) |
 | `model` | string | `"9javox"` | Model name (`9javox`) |
-| `voice` | string | `"pcm"` | Language tag (`ha`, `ig`, `yo`, `pcm`) or `default` |
+| `language` | string | `"pcm"` | Language tag (`ha`, `ig`, `yo`, `pcm`) or `default` |
 | `response_format` | string | `"wav"` | Output format: `wav`, `pcm`, `flac`, `alac`, `mp3`, `aac`, `ogg` |
 | `stream_format` | string | `null` | `"sse"` for streaming, `null` for complete file |
 | `speaker` | string | `null` | Speaker ID (e.g., `"abdullahi_ha"`) — auto-detects language |
 | `speaker_embedding` | float[] | `null` | Raw 128-dim speaker embedding vector |
-| `temperature` | float | `1.0` | Sampling temperature (0.3–1.5) |
-| `top_p` | float | `0.95` | Nucleus sampling threshold |
-| `repetition_penalty` | float | `1.1` | Repetition penalty (1.0–1.5) |
+| `temperature` | float | `0.6` | Sampling temperature (0.3–1.5) |
+| `top_p` | float | `0.85` | Nucleus sampling threshold |
+| `repetition_penalty` | float | `1.3` | Repetition penalty (1.0–1.5) |
 | `max_chunk_duration` | float | `20.0` | Max duration per chunk in long-form mode |
 | `silence_duration` | float | `0.2` | Silence between chunks |
 
-#### Available Voices (Language Tags)
+#### Available Language Tags
 
-| Voice / Tag | Language | Example |
+| Language Tag | Language | Example |
 |-------------|----------|---------|
 | `ha` | Hausa | "Sannu da zuwa, yaya kake?" |
 | `ig` | Igbo | "Kedu ka i mere?" |
@@ -419,11 +419,11 @@ Clone a voice from reference audio and generate speech in one step.
 |-------|------|---------|-------------|
 | `file` | file | required | Reference audio file |
 | `text` | string | required | Text to speak |
-| `voice` | string | `"pcm"` | Language tag |
+| `language` | string | `"pcm"` | Language tag |
 | `response_format` | string | `"wav"` | Output format |
-| `temperature` | float | `1.0` | Sampling temperature |
-| `top_p` | float | `0.95` | Nucleus sampling |
-| `repetition_penalty` | float | `1.1` | Repetition penalty |
+| `temperature` | float | `0.6` | Sampling temperature |
+| `top_p` | float | `0.85` | Nucleus sampling |
+| `repetition_penalty` | float | `1.3` | Repetition penalty |
 
 ## Long-Form Generation
 
@@ -438,7 +438,7 @@ The model supports up to **40 seconds** of continuous audio per generation. For 
 ```json
 {
   "text": "Very long text in Hausa...",
-  "voice": "ha",
+  "language": "ha",
   "speaker": "abdullahi_ha",
   "max_chunk_duration": 20.0,
   "silence_duration": 0.2
@@ -457,13 +457,13 @@ CHUNK_SIZE = 25                        # Frames per streaming chunk
 LOOKBACK_FRAMES = 15                   # Context frames for decoding
 
 # Generation Parameters
-TEMPERATURE = 1.0                      # Sampling temperature
-TOP_P = 0.95                           # Nucleus sampling threshold
-REPETITION_PENALTY = 1.1               # Prevent repetition
-MAX_TOKENS = 3000                      # ~60 seconds max audio
+TEMPERATURE = 0.6                      # Sampling temperature
+TOP_P = 0.85                           # Nucleus sampling threshold
+REPETITION_PENALTY = 1.3               # Prevent repetition
+MAX_TOKENS = 1500                      # ~30 seconds max audio
 
 # Long-Form Settings
-LONG_FORM_THRESHOLD_SECONDS = 15.0     # Auto-enable threshold
+LONG_FORM_THRESHOLD_SECONDS = 40.0     # Auto-enable threshold
 LONG_FORM_CHUNK_DURATION = 12.0        # Target chunk duration
 LONG_FORM_SILENCE_DURATION = 0.2       # Inter-chunk silence
 
@@ -572,7 +572,7 @@ The model uses special tokens to structure generation:
 Language selection is achieved by prepending language tags to prompts:
 ```
 Input: "Sannu da zuwa"
-Voice: "ha"
+Language: "ha"
 Prompt: "ha: Sannu da zuwa"
 ```
 
@@ -584,9 +584,9 @@ This guides the model to generate speech in the requested Nigerian language.
 
 Modify generation parameters in [config.py](config.py):
 ```python
-TEMPERATURE = 1.0         # Lower = more deterministic (0.3-1.5)
-TOP_P = 0.95              # Nucleus sampling threshold
-REPETITION_PENALTY = 1.1  # Prevent repetition (1.0-1.5)
+TEMPERATURE = 0.6         # Lower = more deterministic (0.3-1.5)
+TOP_P = 0.85              # Nucleus sampling threshold
+REPETITION_PENALTY = 1.3  # Prevent repetition (1.0-1.5)
 ```
 
 ### PCM Output with Custom Processing
@@ -596,7 +596,7 @@ curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
   -d '{
     "text": "Na wetin dey happen for Lagos today.",
-    "voice": "pcm",
+    "language": "pcm",
     "response_format": "pcm"
   }' \
   --output speech.pcm
@@ -615,31 +615,31 @@ For lossy formats (MP3, AAC, OGG) and lossless ALAC, FFmpeg must be installed on
 # MP3 — best compatibility, lossy
 curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
-  -d '{"text": "Bawo ni o se wa?", "voice": "yo", "response_format": "mp3"}' \
+  -d '{"text": "Bawo ni o se wa?", "language": "yo", "response_format": "mp3"}' \
   --output speech.mp3
 
 # AAC — modern lossy, good quality/size ratio
 curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
-  -d '{"text": "Kedu ka i mere?", "voice": "ig", "response_format": "aac"}' \
+  -d '{"text": "Kedu ka i mere?", "language": "ig", "response_format": "aac"}' \
   --output speech.aac
 
 # OGG Vorbis — open-source lossy
 curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
-  -d '{"text": "Ina kwana?", "voice": "ha", "response_format": "ogg"}' \
+  -d '{"text": "Ina kwana?", "language": "ha", "response_format": "ogg"}' \
   --output speech.ogg
 
 # FLAC — lossless compression (no FFmpeg needed)
 curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
-  -d '{"text": "How body?", "voice": "pcm", "response_format": "flac"}' \
+  -d '{"text": "How body?", "language": "pcm", "response_format": "flac"}' \
   --output speech.flac
 
 # ALAC — Apple lossless (requires FFmpeg)
 curl -X POST http://localhost:8000/v1/audio/speech \
   -H "Content-Type: application/json" \
-  -d '{"text": "Sannu da zuwa.", "voice": "ha", "response_format": "alac"}' \
+  -d '{"text": "Sannu da zuwa.", "language": "ha", "response_format": "alac"}' \
   --output speech.m4a
 ```
 
@@ -766,7 +766,7 @@ docker run --gpus all -p 8000:8000 9jalingo-vllm-tts
 ## Limitations
 
 1. **Speaker Embeddings**: The vLLM version uses language tags for voice selection. Speaker-specific voice control (via 128-dim embeddings) is available in the standard `naijalingo-tts-2` module but not in the vLLM path due to engine constraints. Voice cloning requires the non-vLLM pipeline.
-2. **Max Audio Length**: ~60 seconds per single generation (max_tokens=3000). Use long-form mode for longer texts.
+2. **Max Audio Length**: ~30 seconds per single generation (max_tokens=1500). Use long-form mode for longer texts.
 3. **Codec Artifacts**: 0.6 kbps compression may introduce minor artifacts (quality/speed tradeoff).
 4. **GPU Inference**: Designed for GPU inference; not tested on CPU or TPU.
 5. **Single Request Processing**: Optimized for one request at a time (increase `max_num_seqs` for concurrent processing).
