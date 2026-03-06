@@ -131,6 +131,33 @@ class DirectTTSGenerator:
 
         return audio, out_text
 
+    def generate_with_retry(
+        self,
+        text: str,
+        language_tag: Optional[str] = None,
+        speaker_emb: Optional[torch.Tensor] = None,
+        temperature: float = 1.0,
+        top_p: float = 0.95,
+        repetition_penalty: float = 1.1,
+        max_retries: int = 2,
+    ) -> Tuple[np.ndarray, str]:
+        """Generate speech with retry on 'Special speech tokens not exist' errors."""
+        last_error = None
+        for attempt in range(max_retries + 1):
+            try:
+                return self.generate(
+                    text, language_tag, speaker_emb, temperature, top_p, repetition_penalty
+                )
+            except ValueError as e:
+                if 'speech tokens' in str(e).lower():
+                    last_error = e
+                    temp_adj = max(0.3, temperature - 0.1 * (attempt + 1))
+                    print(f"[Direct] Retry {attempt+1}/{max_retries}: speech tokens missing, lowering temp to {temp_adj}")
+                    temperature = temp_adj
+                else:
+                    raise
+        raise last_error
+
     def generate_long_form(
         self,
         text: str,
@@ -167,7 +194,7 @@ class DirectTTSGenerator:
         print(f"[Direct Long-form] Estimated: {estimated_duration:.1f}s, Chunk target: {max_chunk_duration}s")
 
         if estimated_duration <= 40.0:
-            audio, _ = self.generate(
+            audio, _ = self.generate_with_retry(
                 text, language_tag, speaker_emb, temperature, top_p, repetition_penalty
             )
             return audio
@@ -187,7 +214,7 @@ class DirectTTSGenerator:
             self._model.model.conf.max_new_tokens = chunk_max_tokens
 
             try:
-                audio, _ = self.generate(
+                audio, _ = self.generate_with_retry(
                     chunk, language_tag, speaker_emb, temperature, top_p, repetition_penalty
                 )
                 audio_segments.append(audio)
@@ -197,7 +224,7 @@ class DirectTTSGenerator:
                     # Retry with more headroom
                     self._model.model.conf.max_new_tokens = min(chunk_max_tokens + 400, MAX_TOKENS)
                     self._model.model.conf.max_new_tokens = (self._model.model.conf.max_new_tokens // 4) * 4
-                    audio, _ = self.generate(
+                    audio, _ = self.generate_with_retry(
                         chunk, language_tag, speaker_emb, temperature, top_p, repetition_penalty
                     )
                     audio_segments.append(audio)

@@ -536,7 +536,7 @@ async def _generate_direct(request: OpenAISpeechRequest, language_tag, speaker_e
                         repetition_penalty=request.repetition_penalty or REPETITION_PENALTY,
                     )
                 else:
-                    full_audio, _ = direct_generator.generate(
+                    full_audio, _ = direct_generator.generate_with_retry(
                         text=request.text,
                         language_tag=language_tag,
                         speaker_emb=speaker_emb,
@@ -592,7 +592,7 @@ async def _generate_direct(request: OpenAISpeechRequest, language_tag, speaker_e
                     repetition_penalty=request.repetition_penalty or REPETITION_PENALTY,
                 )
             else:
-                full_audio, _ = direct_generator.generate(
+                full_audio, _ = direct_generator.generate_with_retry(
                     text=request.text,
                     language_tag=language_tag,
                     speaker_emb=speaker_emb,

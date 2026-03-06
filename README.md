@@ -463,7 +463,7 @@ REPETITION_PENALTY = 1.3               # Prevent repetition
 MAX_TOKENS = 1500                      # ~30 seconds max audio
 
 # Long-Form Settings
-LONG_FORM_THRESHOLD_SECONDS = 40.0     # Auto-enable threshold
+LONG_FORM_THRESHOLD_SECONDS = 20.0     # Auto-enable threshold
 LONG_FORM_CHUNK_DURATION = 12.0        # Target chunk duration
 LONG_FORM_SILENCE_DURATION = 0.2       # Inter-chunk silence
 

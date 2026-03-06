@@ -31,8 +31,8 @@ REPETITION_CONTEXT_SIZE = 20
 MAX_TOKENS = 1500  # ~20 seconds max continuous audio (20s * 12.5fps * 4 tokens/frame ≈ 1000 audio tokens + prompt)
 
 # Long-form generation configuration
-LONG_FORM_THRESHOLD_SECONDS = 40.0  # Model supports up to 40s continuous; auto-chunk beyond that
-LONG_FORM_CHUNK_DURATION = 12.0     # Target duration per chunk (within 5-15s training distribution for quality)
+LONG_FORM_THRESHOLD_SECONDS = 20.0  # Auto-chunk beyond this estimated duration
+LONG_FORM_CHUNK_DURATION = 8.0      # Target duration per chunk (shorter = more reliable completion)
 LONG_FORM_SILENCE_DURATION = 0.2    # Silence between chunks in seconds
 
 # Speaker embedding configuration
